@@ -11,10 +11,12 @@ def main():
     answer = 0
 
     # input
-    number = int(input("Enter number to show it's multiplication table:"))
+    number = input("Enter number to show it's multiplication table:")
 
     # try & process & output
     try:
+        number1 = int(number)
+
         while counter < 11:
             answer = (counter * number)
             print("{} x {} = {}".format(counter, number, answer))
